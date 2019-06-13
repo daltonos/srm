@@ -1,0 +1,46 @@
+html {
+    height: 100%;
+  }
+  
+  body {
+    margin: 0;
+    height: 100%;
+  }
+  
+  .navBar {
+    background-color: lightgray;
+    padding: 1rem;
+  }
+  
+  .screen {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .sideMenu {
+    background-color: lightblue;
+    padding: 1rem;
+    float: left;
+    height: 100%;
+      overflow: hidden;
+      padding: 0;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      width: 0px;
+  
+    -webkit-transition: width 2s, padding 1s;   /* Safari */
+    transition: width 2s, padding 1s;
+  }
+  
+  .sideMenu.open {
+    width: 200px;
+      padding: 1rem;
+  }
+  
+  .content {
+    padding: 1rem;
+    background: lightyellow;
+    overflow: auto;
+      height: 100%;
+  }
+  
