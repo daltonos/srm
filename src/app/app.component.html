@@ -51,12 +51,12 @@
         </div>
         <div class="card card2">
           Card 2
-          <select (change)="filterForeCasts($event.target.value)">
-            <option value="0">--All--</option>
-            <option *ngFor="let action of actions" [value]="action.id">
+          <select [(ngModel)]="actionSelected" (ngModelChange)="onActionSelected($event)">
+            <option *ngFor="let action of actions" [value]="action.Id">
                 {{action.Label}}
             </option>
           </select>
+          <p>Selected value is {{actionSelected}}</p>
         </div>
       </div>
     </div>
