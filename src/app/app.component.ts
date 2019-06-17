@@ -46,7 +46,7 @@ export class AppComponent implements OnInit {
   }
 
   logValue (val:any) {
-    console.log("option '" + val + "' has been selected.");
+    console.log("option '" + val + "' has been selected. ZGFsdG9uc2lsdmFyZWFsbHlsaWtlc3RvbGlzdGVudG9zaGFraXJh");
   }
 
 
