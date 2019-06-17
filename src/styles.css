@@ -1,33 +1,51 @@
 html {
     height: 100%;
-  }
-  
-  body {
+    font-family: 'Roboto', sans-serif;
+}
+body {
     margin: 0;
     height: 100%;
-  }
-  
-  .navBar {
+}
+.navBar {
     background-color: lightgray;
     padding: 1rem;
-  }
-  
-  .screen {
+} 
+.screen {
     height: 100%;
     width: 100%;
     display: table;
-  }
-  
-  .sideMenu {
+}
+.sideMenu {
     background-color: #00233d;
-    padding: 1rem;
     float: left;
     height: 100%;
-    width: 300px;
+    /*width: 300px;*/
     overflow: hidden;
 }
+.sideMenu ul {
+    list-style: none;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+.menuLine {
+    display: flex;
+    position: relative;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: solid;
+    border-color: #297193;
+    border-width: 1px;
+    cursor: pointer;
+}
+.menuLabel {
+    margin-right: 2rem;
+}
+.menuImg {
+    margin-right: 1rem;
+}
 .content {
-    background: lightyellow;
+    background: #ebebeb;
     overflow: auto;
     height: 100%;
     width: auto;
@@ -38,7 +56,7 @@ html {
     height: 100%;
 }
 .titleBar {
-    display: block;
+    display: flex;
     width: 100%;
 }
 .topArea {
@@ -59,17 +77,34 @@ html {
     height: 100%;
     width: 50%;
     box-sizing: border-box;
-    padding: 2rem;
+    padding: 1rem;
     float: left;
 }
 .colL {
-    padding-right: 1rem;
+    padding-right: 0.5rem;
 }
 .colR {
-    padding-left: 1rem;
+    padding-left: 0.5rem;
+}
+@media (max-width: 1092px) {
+    .colHalf {
+        width: 100%;
+    }
+    .colL {
+        padding-right: 1rem;
+    }
+    .colR {
+        padding-left: 1rem;
+    }
+    .card {
+        width: 631px;
+        margin: 0 auto;
+    }
+    .colHalf {
+        height: auto;
+    }
 }
 .card {
-    padding: 2rem;
     height: 100%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     background-color: white;
@@ -88,21 +123,38 @@ html {
 .breadCrumbs {
     display: table-row;
 }
+.breadCrumb {
+    color: grey;
+    text-decoration: none;
+    font-size: 12px;
+}
+.breadCrumbSplitter {
+    color: grey;
+}
 .contentTitleArea {
     background-color: white;
     display: block;
     display: table-row;
 }
 .greyTop {
-    padding: 2rem;
+    padding: 1rem;
     padding-top: 1rem;
+    margin-bottom: 1rem;
     background-color: #ebebeb;
 }
 .leftTopArea {
-    width: 300px;
+    display: flex;
+    width: 231.59px;
     overflow: hidden;
     float: left;
-    padding: 1rem;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    height: 100%;
+    border-right: solid;
+    border-color: lightgray;
+    border-width: 1px;
 }
 .rightTopArea {
     padding: 1rem;
@@ -111,4 +163,240 @@ html {
 .bottomArea {
     display: table-row;
     height: 100%;
+}
+.normalSelect {
+    width: 150px;
+    padding: 5px;
+    font-size: 16px;
+    border-width: 1px;
+    border-color: #297193;
+    border-radius: 0px;
+    height: 34px;
+    background: url(./assets/img/angle-arrow-down-16.png) no-repeat right white;
+    -webkit-appearance: none;
+    background-position-x: 124px;
+    text-align-last: center;
+}
+.titleSelect {
+    width: 230px;
+    height: 3rem;
+    padding: 5px;
+    font-size: 16px;
+    border-width: 1px;
+    border-color: #297193;
+    border-radius: 0px;
+    background: url(./assets/img/arrowDown.png) no-repeat right white;
+    -webkit-appearance: none;
+    background-position-x: 200px;
+    text-align-last: center;
+    color: gray;
+}
+.halfWidth {
+    width: 50%;
+    float: left;
+}
+.alignRight {
+    text-align: right;
+}
+.cardTitle {
+    color: #297193;
+    font-size: x-large;
+}
+.cardTitleArea {
+    padding: 2rem;
+    display: flex;
+    border-bottom: solid;
+    border-color: lightgray;
+    border-width: 1px;
+}
+.daysLabel {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+.cardContentArea {
+    overflow: hidden;
+    padding: 2rem;
+    padding-top: 0;
+}
+.buttonsArea {
+    width: calc(100% - 146px - 2rem);
+    border-right: solid;
+    border-color: lightgray;
+    border-width: 1px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    overflow: hidden;
+    text-align: left;
+    float: left;
+    box-sizing: border-box;
+}
+.buttonsArea2 {
+    width: calc(146px);
+    margin-left: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    overflow: hidden;
+    text-align: center;
+    float: left;
+    box-sizing: border-box;
+}
+.cardLine {
+    display: flex;
+    border-bottom: solid;
+    border-color: lightgray;
+    border-width: 1px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.cardLabel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.titleLeft {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+.titleRight {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 50%;
+}
+.biggerWidth {
+    width: 90%;
+}
+.mr-3 {
+    margin-right: 1rem;
+}
+.ml-3 {
+    margin-left: 1rem;
+}
+.mt-3 {
+    margin-top: 1rem;
+}
+.bgGrey {
+    background-color: #ebebeb;
+}
+.bgDeepBlue {
+    background-color: #00233d;
+}
+.textLight {
+    color: white;
+}
+.alertButton {
+    width: 48px;
+    height: 48px;
+    position: relative;
+    background-color: #297193;
+    cursor: pointer;
+}
+.alertButton:hover {
+    background-color: gray;
+}
+.alertButton:active {
+    background-color: #00233d;
+}
+.alertButton img {
+    max-height: 100%;  
+    max-width: 100%; 
+    width: auto;
+    height: auto;
+    position: absolute;  
+    top: 0;  
+    bottom: 0;  
+    left: 0;  
+    right: 0;  
+    margin: auto;
+}
+.biggerTitle {
+    font-size: xx-large;
+    color: #00233d;
+}
+.searchArea {
+    display: flex;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+}
+.logoText {
+    width: 100%;
+    padding-right: 4rem;
+    text-align: right;
+    border: 0;
+}
+.logoImg {
+    position: absolute;  
+    top: 1.8rem;  
+    right: 1rem;  
+}
+.biggerTitleArea {
+    display: flex;
+    justify-content: flex-start;
+}
+.textMute {
+    color: grey;
+}
+.textButton {
+    border: solid;
+    border-width: 1px;
+    border-color: #297193;
+    padding: 0.5rem;
+    margin-right: 1.5rem;
+    color: grey;
+    width: 40%;
+    min-width: 140px;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    box-sizing: border-box;
+    white-space: nowrap;
+    font-size: 14px;
+}
+.textButton:hover {
+    background: lightgray;
+}
+.textButton:active {
+    background: #297193;
+    color: white;
+}
+.buttonLine {
+    float: left;
+    width: 100%;
+}
+.menuSelected {
+    position: absolute;
+    right: 0;
+}
+.logo {
+    margin-left: 1rem;
+}
+.arrowRightMenu {
+    display: none;
+    position: absolute;
+    right: 1rem;
+}
+.menuLine:hover .arrowRightMenu {
+    display: block;
+}
+.alertCircle {
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+    background:red;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+}
+.alertNumber {
+    vertical-align: middle;
 }
