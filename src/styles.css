@@ -15,10 +15,11 @@ html {
   .screen {
     height: 100%;
     width: 100%;
+    display: table;
   }
   
   .sideMenu {
-    background-color: lightblue;
+    background-color: #00233d;
     padding: 1rem;
     float: left;
     height: 100%;
@@ -44,13 +45,11 @@ html {
     width: 100%;
     display: table-row;
 }
-.topAreaInner {
-    padding: 3rem;
-}
 .contentArea {
     width: 100%;
     height: 100%;
     display: table-row;
+    background-color: #ebebeb;
 }
 .cards {
     height: 100%;
@@ -60,17 +59,17 @@ html {
     height: 100%;
     width: 50%;
     box-sizing: border-box;
-    padding: 3rem;
+    padding: 2rem;
     float: left;
 }
 .colL {
-    padding-right: 1.5rem;
+    padding-right: 1rem;
 }
 .colR {
-    padding-left: 1.5rem;
+    padding-left: 1rem;
 }
 .card {
-    padding: 3rem;
+    padding: 2rem;
     height: 100%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     background-color: white;
@@ -90,5 +89,26 @@ html {
     display: table-row;
 }
 .contentTitleArea {
+    background-color: white;
     display: block;
+    display: table-row;
+}
+.greyTop {
+    padding: 2rem;
+    padding-top: 1rem;
+    background-color: #ebebeb;
+}
+.leftTopArea {
+    width: 300px;
+    overflow: hidden;
+    float: left;
+    padding: 1rem;
+}
+.rightTopArea {
+    padding: 1rem;
+    overflow: auto;
+}
+.bottomArea {
+    display: table-row;
+    height: 100%;
 }
