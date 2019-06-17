@@ -8,57 +8,67 @@
     </ul>
   </div>
   <div class="content">
-    <div class="titleBar">
-      <span class="logo"><img alt="logo" src=""/></span>
-      <span>SRM</span>
-      <span>Grupo Econômico</span>
-      <span>
-        <select>
-          <option value="volvo">Volvo</option>
-          <option value="saab">Saab</option>
-          <option value="mercedes">Mercedes</option>
-          <option value="audi">Audi</option>
-        </select>
-      </span>
-      <span>
-        <select>
-          <option value="volvo">Volvo</option>
-          <option value="saab">Saab</option>
-          <option value="mercedes">Mercedes</option>
-          <option value="audi">Audi</option>
-        </select>
-      </span>
-      <span><img alt="alert" src=""/></span>
-    </div>
-    <div class="contentArea">
-      <div class="breadcrumbs">Breadcrumbs</div>
-      <div class="contentTitleArea">
-        <span class="logo"><img alt="logo" src=""/></span>
-        <span>SRM</span>
-        <span>Produto</span>
-        <span>
-          <select>
-            <option value="volvo">Volvo</option>
-            <option value="saab">Saab</option>
-            <option value="mercedes">Mercedes</option>
-            <option value="audi">Audi</option>
-          </select>
-        </span>
-      </div>
-      <div class="cards">
-        <div class="card card1">
-          Card 1
+    <div class="tableLayout">
+        <div class="topArea">
+          <div class="topAreaInner">
+              <div class="contentTitleArea">
+                <span class="logo"><img alt="logo" src=""/></span>
+                <span>SRM</span>
+                <span>Produto</span>
+                <span>
+                  <select>
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                  </select>
+                </span>
+              </div>
+              <div class="titleBar">
+                <span class="logo"><img alt="logo" src=""/></span>
+                <span>SRM</span>
+                <span>Grupo Econômico</span>
+                <span>
+                  <select>
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                  </select>
+                </span>
+                <span>
+                  <select>
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                  </select>
+                </span>
+                <span><img alt="alert" src=""/></span>
+              </div>
+              <div class="breadcrumbs">Breadcrumbs</div>
+          </div>
         </div>
-        <div class="card card2">
-          Card 2
-          <select [(ngModel)]="actionSelected" (ngModelChange)="onActionSelected($event)">
-            <option *ngFor="let action of actions" [value]="action.Id">
-                {{action.Label}}
-            </option>
-          </select>
-          <p>Selected value is {{actionSelected}}</p>
+        <div class="contentArea">
+          <div class="cards">
+            <div class="colHalf colL">
+              <div class="card card1">
+                Card 1
+              </div>
+            </div>
+            <div class="colHalf colR">
+              <div class="card card2">
+                Card 2
+                <select [(ngModel)]="actionSelected" (ngModelChange)="onActionSelected($event)">
+                  <option *ngFor="let action of actions" [value]="action.Id">
+                      {{action.Label}}
+                  </option>
+                </select>
+                <p>Selected value is {{actionSelected}}</p>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
     </div>
   </div>
 </div>

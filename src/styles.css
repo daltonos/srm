@@ -22,57 +22,73 @@ html {
     padding: 1rem;
     float: left;
     height: 100%;
-      overflow: hidden;
-      padding: 0;
-      padding-top: 1rem;
-      padding-bottom: 1rem;
-      width: 0px;
-  
-    -webkit-transition: width 2s, padding 1s;   /* Safari */
-    transition: width 2s, padding 1s;
-  }
-  
-  .sideMenu.open {
-    width: 200px;
-    padding: 1rem;
-  }
-  
-  .content {
-    padding: 2rem;
+    width: 300px;
+    overflow: hidden;
+}
+.content {
     background: lightyellow;
     overflow: auto;
     height: 100%;
-  }
-  
+    width: auto;
+}
+.tableLayout {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
 .titleBar {
     display: block;
     width: 100%;
 }
-.contentArea {
-    display: block;
+.topArea {
     width: 100%;
+    display: table-row;
+}
+.topAreaInner {
+    padding: 3rem;
+}
+.contentArea {
+    width: 100%;
+    height: 100%;
+    display: table-row;
 }
 .cards {
-    display: block;
+    height: 100%;
     width: 100%;
+}
+.colHalf {
+    height: 100%;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 3rem;
+    float: left;
+}
+.colL {
+    padding-right: 1.5rem;
+}
+.colR {
+    padding-left: 1.5rem;
 }
 .card {
     padding: 3rem;
+    height: 100%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     background-color: white;
     transition: 0.2s;
     box-sizing: border-box;
-
 }
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }  
 .card1 {
-    display: inline-block;
-    margin-right: 2rem;
-    width: calc(70% - 2rem);
+    height: 100%;
 }
 .card2 {
-    display: inline-block;
-    width: 30%;
+    height: 100%;
+}
+.breadCrumbs {
+    display: table-row;
+}
+.contentTitleArea {
+    display: block;
 }
